@@ -1,4 +1,4 @@
-// import ArticleSVG from './assets/svg/article.svg'
+import ArticleSVG from './icons/article.svg?react'
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <svg>
         <use xlinkHref="#icon-article"></use>
       </svg>
+      <ArticleSVG />
     </div>
   )
 }
