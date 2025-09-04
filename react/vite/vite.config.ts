@@ -10,23 +10,23 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        // icon: true
-        svgo: true,
-        svgoConfig: {
-          plugins: [
-            {
-              name: 'preset-default',
-              params: {
-                overrides: {
-                  // 保留 viewBox
-                  removeViewBox: false
-                }
-              }
-            },
-            // 移除填充和描色属性
-            'removeAttrs'
-          ]
-        }
+        icon: true
+        // svgo: true,
+        // svgoConfig: {
+        //   plugins: [
+        //     {
+        //       name: 'preset-default',
+        //       params: {
+        //         overrides: {
+        //           // 保留 viewBox
+        //           removeViewBox: false
+        //         }
+        //       }
+        //     },
+        //     // 移除填充和描色属性
+        //     'removeAttrs'
+        //   ]
+        // }
       }
     }),
     createSvgIconsPlugin({
