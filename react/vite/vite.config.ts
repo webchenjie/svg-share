@@ -8,27 +8,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [
     react(),
-    svgr({
-      svgrOptions: {
-        icon: true
-        // svgo: true,
-        // svgoConfig: {
-        //   plugins: [
-        //     {
-        //       name: 'preset-default',
-        //       params: {
-        //         overrides: {
-        //           // 保留 viewBox
-        //           removeViewBox: false
-        //         }
-        //       }
-        //     },
-        //     // 移除填充和描色属性
-        //     'removeAttrs'
-        //   ]
-        // }
-      }
-    }),
+    svgr(),
     createSvgIconsPlugin({
       // 指定需要缓存的图标文件夹
       iconDirs: [path.resolve(process.cwd(), 'src/icons')],
